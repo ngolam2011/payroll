@@ -8,7 +8,6 @@
 
 class Transaction {
     public:
-        virtual ~Transaction();
         virtual void Execute();
 };
 

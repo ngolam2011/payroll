@@ -6,7 +6,9 @@
 #define PAYROLL_HOLDMETHOD_H
 
 
-class HoldMethod {
+#include "PaymentMethod.h"
+
+class HoldMethod : public PaymentMethod {
 
 };
 

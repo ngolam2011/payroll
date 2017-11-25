@@ -6,24 +6,28 @@
 #define PAYROLL_ADDEMPLOYEETRANSACTION_H
 
 #include "Transaction.h"
+#include "PayrollDatabase.h"
 #include <string>
 
 using namespace std;
 class PaymentClassification;
 class PaymentSchedule;
 
-class AddEmployeeTransaction {
+extern PayrollDatabase GpayrollDatabase;
+
+class AddEmployeeTransaction : public Transaction {
     public:
         virtual ~AddEmployeeTransaction();
         AddEmployeeTransaction(int empid, string name, string address);
         virtual PaymentClassification* GetClassification() const = 0;
         virtual PaymentSchedule* GetSchedule() const = 0;
-        virtual void Execute();
+        virtual void Execute() = 0;
 
     private:
         int itsEmpid;
         string itsName;
         string itsAddress;
+
 };
 
 
