@@ -7,7 +7,8 @@
 
 
 class PaymentClassification {
-
+public:
+    PaymentClassification();
 };
 
 

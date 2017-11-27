@@ -16,10 +16,10 @@ class AddSalariedEmployee : public AddEmployeeTransaction {
         AddSalariedEmployee(int empid, string name, string address, double salary);
         PaymentClassification* GetClassification() const;
         PaymentSchedule* GetSchedule() const;
+        void Execute();
 
     private:
         double itsSalary;
-
 };
 
 

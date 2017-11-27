@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include "../PayRoll/AddSalariedEmployee.h"
 #include "../PayRoll/Employee.h"
+#include "../PayRoll/SalariedClassification.h"
 
 class GregorianCalendar;
 
@@ -14,31 +15,26 @@ protected:
 public:
     PayrollTest() : Test() {
         int emId = 1;
-        AddSalariedEmployee t(emId, "Bod", "Home", 1000.00);
+        AddSalariedEmployee t(1, "Bod", "Home", 100.00);
         t.Execute();
 
-
-
-
     }
-    GregorianCalendar* gregorian_calendar;
 };
 
-
-TEST(PayrollTest, check_name_employee) {
+/*TEST(PayrollTest2, check_name_employee) {
     Employee* e = GpayrollDatabase.GetEmployee(1);
     EXPECT_EQ("Bob", e->GetName());
-}
+}*/
 
 
-/*TEST_F(PayrollTest, check_classification) {
+TEST_F(PayrollTest, check_classification) {
     Employee* e = GpayrollDatabase.GetEmployee(1);
     PaymentClassification* pc = e->GetClassification();
     SalariedClassification* sc = dynamic_cast<SalariedClassification*>(pc);
     ASSERT_TRUE(sc);
 }
 
-
+/*
 TEST_F(PayrollTest, check_hold_method) {
     Employee* e = GpayrollDatabase.GetEmployee(1);
     PaymentClassification* pc = e->GetClassification();

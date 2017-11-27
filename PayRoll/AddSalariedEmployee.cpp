@@ -22,3 +22,5 @@ AddSalariedEmployee::GetClassification() const {
 PaymentSchedule* AddSalariedEmployee::GetSchedule() const {
     return new MonthlySchedule();
 }
+
+void AddSalariedEmployee::Execute() {}

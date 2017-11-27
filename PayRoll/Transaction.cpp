@@ -3,3 +3,4 @@
 //
 
 #include "Transaction.h"
+void Transaction::Execute() {}

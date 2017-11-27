@@ -34,5 +34,5 @@ void AddEmployeeTransaction::Execute() {
     e->SetSchedule(ps);
     e->SetMethod(pm);
     GpayrollDatabase.AddEmployee(itsEmpid, e);
-
 }
+
