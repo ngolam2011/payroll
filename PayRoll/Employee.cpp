@@ -39,3 +39,7 @@ PaymentMethod *Employee::GetMethod() {
     return itsPaymentMethod;
 }
 
+PaymentClassification* Employee::GetClassification() {
+
+}
+

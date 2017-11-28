@@ -9,6 +9,7 @@
 class PaymentClassification {
 public:
     PaymentClassification();
+    virtual double GetSalary();
 };
 
 

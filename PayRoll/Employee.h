@@ -21,7 +21,7 @@ public:
 
     void SetClassification(PaymentClassification *pClassification);
 
-    PaymentClassification* GetClassification();
+    PaymentClassification *GetClassification();
 
     void SetSchedule(PaymentSchedule *pSchedule);
 

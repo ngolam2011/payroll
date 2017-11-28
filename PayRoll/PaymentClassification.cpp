@@ -6,3 +6,5 @@
 PaymentClassification::PaymentClassification() {
 
 }
+double PaymentClassification::GetSalary() {
+}

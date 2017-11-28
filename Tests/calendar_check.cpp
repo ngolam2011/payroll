@@ -29,8 +29,8 @@ public:
 
 TEST_F(PayrollTest, check_classification) {
     Employee* e = GpayrollDatabase.GetEmployee(1);
-    PaymentClassification* pc = e->GetClassification();
-    SalariedClassification* sc = dynamic_cast<SalariedClassification*>(pc);
+    PaymentClassification *pc = e->GetClassification();
+    SalariedClassification *sc = dynamic_cast<SalariedClassification *>(pc);
     ASSERT_TRUE(sc);
 }
 
