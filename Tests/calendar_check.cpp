@@ -21,18 +21,23 @@ public:
     }
 };
 
-/*TEST(PayrollTest2, check_name_employee) {
+TEST(PayrollTest, check_name_employee) {
+    int emId = 1;
+    AddSalariedEmployee t(1, "Bob", "Home", 100.00);
+    t.Execute();
     Employee* e = GpayrollDatabase.GetEmployee(1);
     EXPECT_EQ("Bob", e->GetName());
-}*/
+}
 
 
+/*
 TEST_F(PayrollTest, check_classification) {
     Employee* e = GpayrollDatabase.GetEmployee(1);
     PaymentClassification *pc = e->GetClassification();
     SalariedClassification *sc = dynamic_cast<SalariedClassification *>(pc);
     ASSERT_TRUE(sc);
 }
+*/
 
 /*
 TEST_F(PayrollTest, check_hold_method) {

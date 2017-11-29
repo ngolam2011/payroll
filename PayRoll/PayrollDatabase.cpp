@@ -11,7 +11,7 @@ PayrollDatabase::~PayrollDatabase() {
 
 }
 
-Employee* PayrollDatabase::GetEmployee(int empId) {
+Employee *PayrollDatabase::GetEmployee(int empId) {
     return itsEmployees[empId];
 }
 
