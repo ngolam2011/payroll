@@ -7,7 +7,8 @@
 
 
 class PaymentSchedule {
-
+public:
+    virtual void Set();
 };
 
 

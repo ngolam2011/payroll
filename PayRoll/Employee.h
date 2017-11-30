@@ -39,6 +39,7 @@ private:
     string itsAddress;
     PaymentSchedule* itsPaymentSchedule;
     PaymentMethod* itsPaymentMethod;
+    PaymentClassification* itsPaymentClassification;
 
 };
 

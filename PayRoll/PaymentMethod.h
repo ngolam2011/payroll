@@ -7,6 +7,8 @@
 
 
 class PaymentMethod {
+public:
+    virtual void Get();
 
 };
 

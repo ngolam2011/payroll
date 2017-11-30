@@ -16,15 +16,15 @@ Employee::Employee(int empId, string name, string address)
         , itsAddress(address){}
 
 void Employee::SetClassification(PaymentClassification *pClassification) {
-
+    itsPaymentClassification = pClassification;
 }
 
 void Employee::SetSchedule(PaymentSchedule *pSchedule) {
-
+    itsPaymentSchedule = pSchedule;
 }
 
 void Employee::SetMethod(PaymentMethod *pMethod) {
-
+    itsPaymentMethod = pMethod;
 }
 
 string Employee::GetName() {
@@ -40,6 +40,6 @@ PaymentMethod *Employee::GetMethod() {
 }
 
 PaymentClassification* Employee::GetClassification() {
-
+    return itsPaymentClassification;
 }
 

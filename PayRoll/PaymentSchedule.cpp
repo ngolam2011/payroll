@@ -3,3 +3,5 @@
 //
 
 #include "PaymentSchedule.h"
+
+void PaymentSchedule::Set() {}

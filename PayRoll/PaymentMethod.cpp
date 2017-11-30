@@ -3,3 +3,4 @@
 //
 
 #include "PaymentMethod.h"
+void PaymentMethod::Get() {}
