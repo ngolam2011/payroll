@@ -4,8 +4,8 @@
 #include "../PayRoll/SalariedClassification.h"
 #include "../PayRoll/MonthlySchedule.h"
 #include "../PayRoll/HoldMethod.h"
+#include "../PayRoll/PayrollDatabase.h"
 
-class GregorianCalendar;
 
 class PayrollTest : public ::testing::Test {
 protected:

@@ -3,6 +3,7 @@
 //
 
 #include "PayrollDatabase.h"
+#include "Employee.h"
 
 
 PayrollDatabase GpayrollDatabase;

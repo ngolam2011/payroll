@@ -5,6 +5,7 @@
 #include "AddEmployeeTransaction.h"
 #include "HoldMethod.h"
 #include "Employee.h"
+#include "PayrollDatabase.h"
 
 class PaymentMethod;
 class PaymentSchedule;

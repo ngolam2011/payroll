@@ -6,12 +6,12 @@
 #define PAYROLL_ADDEMPLOYEETRANSACTION_H
 
 #include "Transaction.h"
-#include "PayrollDatabase.h"
 #include <string>
 
 using namespace std;
 class PaymentClassification;
 class PaymentSchedule;
+class PayrollDatabase;
 
 extern PayrollDatabase GpayrollDatabase;
 
