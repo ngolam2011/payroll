@@ -3,8 +3,8 @@
 //
 
 #include "AddHourlyEmployee.h"
-#include "HourlyClassification.h"
-#include "WeeklySchedule.h"
+#include "../HourlyClassification.h"
+#include "../WeeklySchedule.h"
 
 AddHourlyEmployee::AddHourlyEmployee(int empid, const string &name, const string &address, double hourlyRate)
         : AddEmployeeTransaction(empid, name, address)

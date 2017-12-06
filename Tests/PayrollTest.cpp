@@ -1,10 +1,10 @@
 #include <gtest/gtest.h>
-#include "../PayRoll/AddSalariedEmployee.h"
+#include "../PayRoll/Transactions/AddSalariedEmployee.h"
 #include "../PayRoll/Employee.h"
 #include "../PayRoll/SalariedClassification.h"
 #include "../PayRoll/MonthlySchedule.h"
 #include "../PayRoll/HoldMethod.h"
-#include "../PayRoll/PayrollDatabase.h"
+#include "../PayRoll/Database/PayrollDatabase.h"
 
 
 class PayrollTest : public ::testing::Test {

@@ -3,8 +3,8 @@
 //
 
 #include <gtest/gtest.h>
-#include "../PayRoll/AddCommissionedEmployee.h"
-#include "../PayRoll/PayrollDatabase.h"
+#include "../PayRoll/Transactions/AddCommissionedEmployee.h"
+#include "../PayRoll/Database/PayrollDatabase.h"
 #include "../PayRoll/Employee.h"
 #include "../PayRoll/BiweeklySchedule.h"
 #include "../PayRoll/CommissionedClassification.h"

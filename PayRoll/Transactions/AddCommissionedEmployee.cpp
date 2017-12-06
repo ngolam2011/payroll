@@ -3,8 +3,8 @@
 //
 
 #include "AddCommissionedEmployee.h"
-#include "CommissionedClassification.h"
-#include "BiweeklySchedule.h"
+#include "../CommissionedClassification.h"
+#include "../BiweeklySchedule.h"
 
 AddCommissionedEmployee::~AddCommissionedEmployee() {};
 

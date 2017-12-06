@@ -3,8 +3,8 @@
 //
 
 #include "AddSalariedEmployee.h"
-#include "SalariedClassification.h"
-#include "MonthlySchedule.h"
+#include "../SalariedClassification.h"
+#include "../MonthlySchedule.h"
 
 AddSalariedEmployee::~AddSalariedEmployee() {
 }

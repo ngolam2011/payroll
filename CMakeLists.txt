@@ -8,18 +8,18 @@ include_directories(Tests/lib/googletest/googlemock/include)
 
 
 set(SOURCE_FILES main.cpp
-        PayRoll/Transaction.cpp
-        PayRoll/Transaction.h
-        PayRoll/PayrollDatabase.cpp
-        PayRoll/PayrollDatabase.h
-        PayRoll/AddEmployeeTransaction.cpp
-        PayRoll/AddEmployeeTransaction.h
+        PayRoll/Transactions/Transaction.cpp
+        PayRoll/Transactions/Transaction.h
+        PayRoll/Database/PayrollDatabase.cpp
+        PayRoll/Database/PayrollDatabase.h
+        PayRoll/Transactions/AddEmployeeTransaction.cpp
+        PayRoll/Transactions/AddEmployeeTransaction.h
         PayRoll/HoldMethod.cpp
         PayRoll/HoldMethod.h
         PayRoll/Employee.cpp
         PayRoll/Employee.h
-        PayRoll/AddSalariedEmployee.cpp
-        PayRoll/AddSalariedEmployee.h
+        PayRoll/Transactions/AddSalariedEmployee.cpp
+        PayRoll/Transactions/AddSalariedEmployee.h
         PayRoll/SalariedClassification.cpp
         PayRoll/SalariedClassification.h
         PayRoll/MonthlySchedule.cpp
@@ -32,11 +32,11 @@ set(SOURCE_FILES main.cpp
         PayRoll/PaymentSchedule.cpp
         PayRoll/PaymentSchedule.h
         Tests/AddHourlyEmployeeTest.cpp
-        PayRoll/AddHourlyEmployee.cpp
-        PayRoll/AddHourlyEmployee.h
+        PayRoll/Transactions/AddHourlyEmployee.cpp
+        PayRoll/Transactions/AddHourlyEmployee.h
         PayRoll/HourlyClassification.cpp
         PayRoll/HourlyClassification.h
         PayRoll/WeeklySchedule.cpp
-        PayRoll/WeeklySchedule.h Tests/AddCommissionedEmployeeTest.cpp PayRoll/AddCommissionedEmployee.cpp PayRoll/AddCommissionedEmployee.h PayRoll/CommissionedClassification.cpp PayRoll/CommissionedClassification.h PayRoll/BiweeklySchedule.cpp PayRoll/BiweeklySchedule.h)
+        PayRoll/WeeklySchedule.h Tests/AddCommissionedEmployeeTest.cpp PayRoll/Transactions/AddCommissionedEmployee.cpp PayRoll/Transactions/AddCommissionedEmployee.h PayRoll/CommissionedClassification.cpp PayRoll/CommissionedClassification.h PayRoll/BiweeklySchedule.cpp PayRoll/BiweeklySchedule.h Tests/DeleteEmployeeTest.cpp PayRoll/Transactions/DeleteEmployeeTransaction.cpp PayRoll/Transactions/DeleteEmployeeTransaction.h)
 add_executable(PayRoll ${SOURCE_FILES})
 target_link_libraries(PayRoll gtest gtest_main)

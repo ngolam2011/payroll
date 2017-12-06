@@ -3,10 +3,10 @@
 //
 
 #include "gtest/gtest.h"
-#include "../PayRoll/AddEmployeeTransaction.h"
+#include "../PayRoll/Transactions/AddEmployeeTransaction.h"
 #include "../PayRoll/HourlyClassification.h"
-#include "../PayRoll/AddHourlyEmployee.h"
-#include "../PayRoll/PayrollDatabase.h"
+#include "../PayRoll/Transactions/AddHourlyEmployee.h"
+#include "../PayRoll/Database/PayrollDatabase.h"
 #include "../PayRoll/WeeklySchedule.h"
 #include "../PayRoll/Employee.h"
 #include "../PayRoll/HoldMethod.h"
