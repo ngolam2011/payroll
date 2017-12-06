@@ -37,6 +37,6 @@ set(SOURCE_FILES main.cpp
         PayRoll/HourlyClassification.cpp
         PayRoll/HourlyClassification.h
         PayRoll/WeeklySchedule.cpp
-        PayRoll/WeeklySchedule.h)
+        PayRoll/WeeklySchedule.h Tests/AddCommissionedEmployeeTest.cpp PayRoll/AddCommissionedEmployee.cpp PayRoll/AddCommissionedEmployee.h PayRoll/CommissionedClassification.cpp PayRoll/CommissionedClassification.h PayRoll/BiweeklySchedule.cpp PayRoll/BiweeklySchedule.h)
 add_executable(PayRoll ${SOURCE_FILES})
 target_link_libraries(PayRoll gtest gtest_main)
