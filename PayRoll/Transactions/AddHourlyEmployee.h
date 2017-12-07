@@ -10,7 +10,7 @@
 
 class AddHourlyEmployee : public AddEmployeeTransaction{
 public:
-    AddHourlyEmployee(int empid, const string &name, const string &address, double hourlyRate);
+    AddHourlyEmployee(int empId, const string &name, const string &address, double hourlyRate);
 
     PaymentClassification *GetClassification() const override;
 
@@ -18,7 +18,7 @@ public:
 
 
 private:
-    double itshourlyRate;
+    double itsHourlyRate;
 
 };
 

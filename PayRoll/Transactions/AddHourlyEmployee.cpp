@@ -6,12 +6,12 @@
 #include "../HourlyClassification.h"
 #include "../WeeklySchedule.h"
 
-AddHourlyEmployee::AddHourlyEmployee(int empid, const string &name, const string &address, double hourlyRate)
-        : AddEmployeeTransaction(empid, name, address)
-        , itshourlyRate(hourlyRate) {}
+AddHourlyEmployee::AddHourlyEmployee(int empId, const string &name, const string &address, double hourlyRate)
+        : AddEmployeeTransaction(empId, name, address)
+        , itsHourlyRate(hourlyRate) {}
 
 PaymentClassification *AddHourlyEmployee::GetClassification() const {
-    return new HourlyClassification(itshourlyRate);
+    return new HourlyClassification(itsHourlyRate);
 }
 
 PaymentSchedule *AddHourlyEmployee::GetSchedule() const {

@@ -7,6 +7,9 @@
 
 
 #include "PaymentClassification.h"
+#include "TimeCard.h"
+#include <list>
+using namespace std;
 
 class HourlyClassification : public PaymentClassification{
 
@@ -14,8 +17,13 @@ public:
     HourlyClassification(double hourlyRate);
     double GetHourlyRate();
 
+    void AddTimeCard(TimeCard *pCard);
+
+    TimeCard *GetTimeCard(int date);
+
 private:
     double itsHourlyRate;
+     list<TimeCard*> itsTimeCards;
 
 };
 

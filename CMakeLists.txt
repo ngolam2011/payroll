@@ -37,6 +37,6 @@ set(SOURCE_FILES main.cpp
         PayRoll/HourlyClassification.cpp
         PayRoll/HourlyClassification.h
         PayRoll/WeeklySchedule.cpp
-        PayRoll/WeeklySchedule.h Tests/AddCommissionedEmployeeTest.cpp PayRoll/Transactions/AddCommissionedEmployee.cpp PayRoll/Transactions/AddCommissionedEmployee.h PayRoll/CommissionedClassification.cpp PayRoll/CommissionedClassification.h PayRoll/BiweeklySchedule.cpp PayRoll/BiweeklySchedule.h Tests/DeleteEmployeeTest.cpp PayRoll/Transactions/DeleteEmployeeTransaction.cpp PayRoll/Transactions/DeleteEmployeeTransaction.h)
+        PayRoll/WeeklySchedule.h Tests/AddCommissionedEmployeeTest.cpp PayRoll/Transactions/AddCommissionedEmployee.cpp PayRoll/Transactions/AddCommissionedEmployee.h PayRoll/CommissionedClassification.cpp PayRoll/CommissionedClassification.h PayRoll/BiweeklySchedule.cpp PayRoll/BiweeklySchedule.h Tests/DeleteEmployeeTest.cpp PayRoll/Transactions/DeleteEmployeeTransaction.cpp PayRoll/Transactions/DeleteEmployeeTransaction.h PayRoll/Transactions/TimeCardTransaction.cpp PayRoll/Transactions/TimeCardTransaction.h PayRoll/TimeCard.cpp PayRoll/TimeCard.h)
 add_executable(PayRoll ${SOURCE_FILES})
 target_link_libraries(PayRoll gtest gtest_main)
