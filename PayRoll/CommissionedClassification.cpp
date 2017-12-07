@@ -17,3 +17,19 @@ double CommissionedClassification::GetSalary() {
 double CommissionedClassification::GetCommissionRate() {
     itsCommissionRate;
 }
+
+SalesReceipt* CommissionedClassification::GetSalesReceipt(int date) {
+    list<SalesReceipt*>::iterator it = itsSalesReceipt.begin();
+
+    for (it; it != end(itsSalesReceipt); it++) {
+        if ((*it)->GetDate() == date) {
+            return (*it);
+        }
+    }
+
+    return nullptr;
+}
+
+void CommissionedClassification::AddSalesReceipt(SalesReceipt *pReceipt) {
+    itsSalesReceipt.push_back(pReceipt);
+}

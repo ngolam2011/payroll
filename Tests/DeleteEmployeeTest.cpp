@@ -13,6 +13,9 @@ using std::endl;
 #include "../PayRoll/Transactions/AddHourlyEmployee.h"
 #include "../PayRoll/HourlyClassification.h"
 #include "../PayRoll/Transactions/TimeCardTransaction.h"
+#include "../PayRoll/Transactions/SalesReceiptTransaction.h"
+#include "../PayRoll/CommissionedClassification.h"
+#include "../PayRoll/SalesReceipt.h"
 
 TEST(Transaction, DeleteEmployee) {
         cerr << "TestDeleteEmployee" << endl;
@@ -47,5 +50,29 @@ TEST(Transaction, TimeCardTransaction) {
     TimeCard *tc = hc->GetTimeCard(200011031);
     EXPECT_TRUE(tc != 0);
     EXPECT_EQ(8.0, tc->GetHours());
+}
+
+TEST(Transaction, SalesReceiptTransaction) {
+    cerr << "Test Sale Receipt Transaction" << endl;
+    int empId = 3;
+    AddCommissionedEmployee t(empId, "Ngo Lam", "VietNam", 1000.00, 8.0);
+    t.Execute();
+
+    SalesReceiptTransaction srt(200011031, 87.00, empId);
+    srt.Execute();
+
+    Employee *e = GpayrollDatabase.GetEmployee(empId);
+    EXPECT_TRUE(e != 0);
+
+    PaymentClassification *pc = e->GetClassification();
+    CommissionedClassification *cc = dynamic_cast<CommissionedClassification*>(pc);
+    EXPECT_TRUE(cc != 0);
+
+    SalesReceipt *sr = cc->GetSalesReceipt(200011031);
+
+    EXPECT_TRUE(sr != 0);
+
+    EXPECT_EQ(87.00, sr->GetAmount());
+
 }
 

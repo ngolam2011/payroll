@@ -7,7 +7,10 @@
 
 
 #include "PaymentClassification.h"
+#include "SalesReceipt.h"
+#include <list>
 
+using namespace std;
 class CommissionedClassification : public PaymentClassification{
 
 public:
@@ -15,9 +18,14 @@ public:
     double GetSalary();
     double GetCommissionRate();
 
+    SalesReceipt *GetSalesReceipt(int date);
+
+    void AddSalesReceipt(SalesReceipt *pReceipt);
+
 private:
     double itsSalary;
     double itsCommissionRate;
+    list<SalesReceipt*> itsSalesReceipt;
 };
 
 
