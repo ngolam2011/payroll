@@ -7,6 +7,9 @@
 
 
 #include <string>
+#include "UnionAffiliation.h"
+#include "Affliation.h"
+
 using namespace std;
 
 class PaymentClassification;
@@ -33,6 +36,12 @@ public:
 
     PaymentMethod *GetMethod();
 
+    void SetAffiliation(Affliation *affiliation);
+
+    int GetId();
+
+    Affliation *GetAffiliation();
+
 private:
     string itsName;
     int itsEmpid;
@@ -40,7 +49,7 @@ private:
     PaymentSchedule* itsPaymentSchedule;
     PaymentMethod* itsPaymentMethod;
     PaymentClassification* itsPaymentClassification;
-
+    Affliation *itsAffiliation;
 };
 
 

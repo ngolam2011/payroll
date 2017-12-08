@@ -17,8 +17,14 @@ class PayrollDatabase {
         void AddEmployee(int empId, Employee*);
         void DeleteEmployee(int empId);
         void clear() {itsEmployees.clear();}
-    private:
+
+    Employee *GetUnionMember(int memberId);
+
+    void AddUnionMember(int memberId, Employee *employeeId);
+
+private:
         map<int, Employee*> itsEmployees;
+        map<int, int> itsMemberId;
 };
 
 

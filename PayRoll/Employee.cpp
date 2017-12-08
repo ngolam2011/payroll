@@ -43,3 +43,14 @@ PaymentClassification* Employee::GetClassification() {
     return itsPaymentClassification;
 }
 
+void Employee::SetAffiliation(Affliation *affiliation) {
+    itsAffiliation = affiliation;
+}
+
+int Employee::GetId() {
+    return itsEmpid;
+}
+
+Affliation *Employee::GetAffiliation() {
+    return itsAffiliation;
+}
